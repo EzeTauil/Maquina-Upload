@@ -115,17 +115,22 @@ Finished
 ### _Usamos el "/upload" que vimos anteriormente poniendolo en la web como "http://172.17.0.2/upload.php" ,en la salida nos encontramos con un recuadro donde se pueden subir archivos, asi que vamos a intentar explotar eso:_ 
 
 ## _Adjunto imagen:_
-![img6](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/b7142178-d353-419d-802d-8c2aeefd1d29)
+![img6](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/b7142178-d353-419d-802d-8c2aeefd1d29) 
+
 ## _Procedemos con la subida de un archivo ".php" creado con "nano" para ver si se logra subir o no._
 ## _Adjunto imagen:_
 ![img7](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/19ff2e35-d67d-435d-9707-65a7887f45bd)
-_Seleccionamos el archivo creado con nano que se llama "info.php" y lo subimos_
+
+## _Seleccionamos el archivo creado con nano que se llama "info.php" y lo subimos_
 ![img9](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/f91342d2-c1eb-4280-991d-fcc28bfd392a)
-_Aca vemos que el archivo "info.php" se subio con exito._
+
+## _Aca vemos que el archivo "info.php" se subio con exito._
 ![img10](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/eb6e423f-1ab6-4a1f-8fae-ff5f97b0ddce)
-_Ahora que sabemos que se pueden subir archivos vamos a subir una "backdoor.php simple" para tener una webshell_
+
+## _Ahora que sabemos que se pueden subir archivos vamos a subir una "backdoor.php simple" para tener una webshell_
 ![img13](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/f437928a-08e9-4c3c-8ce5-c1684291fd8c)
 ![img14](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/05a38730-402b-4ab2-aa5e-8fd4aa9acee3)
+
 ## _Pasamos a verificar si estan los archivos subidos_
 ## _Adjunto imagen:_
 ![img16](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/a6992061-a65c-4566-bb89-e984c7b94ef3)

@@ -106,17 +106,17 @@ Finished
 ```
 ## _Adjunto imagen_
 ![imgdir](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/c031d821-a76f-47f5-99fe-a82eb06f54ad)
-##_Podemos ver efectivamente que hay dos directorios interesantes para investigar, "/uploads (Status: 301) [Size: 310] [--> http://172.17.0.2/uploads/] y /upload.php (Status: 200) [Size: 1357]"
+## _Podemos ver efectivamente que hay dos directorios interesantes para investigar, "/uploads (Status: 301) [Size: 310] [--> http://172.17.0.2/uploads/] y /upload.php (Status: 200) [Size: 1357]"_
 
 ## ----------------------------------------------------------------------------------------------------------------------------------
 
 ## Paso N°4: Revisar y utilizar lo encontrado.
 
-### _Usamos el "/uploads" que vimos anteriormente poniendolo en la web como "http://172.17.0.2/upload.php" ,en la salida nos encontramos con un recuadro donde se pueden subir archivos, asi que vamos a intentar explotar eso:_ 
+### _Usamos el "/upload" que vimos anteriormente poniendolo en la web como "http://172.17.0.2/upload.php" ,en la salida nos encontramos con un recuadro donde se pueden subir archivos, asi que vamos a intentar explotar eso:_ 
 
 ## _Adjunto imagen:_
 ![img6](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/b7142178-d353-419d-802d-8c2aeefd1d29)
-## _Procedemos con la subida de un archivo ".php" creado con "nano" para ver si se logra subir o no.
+## _Procedemos con la subida de un archivo ".php" creado con "nano" para ver si se logra subir o no._
 ## _Adjunto imagen:_
 ![img7](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/19ff2e35-d67d-435d-9707-65a7887f45bd)
 _Seleccionamos el archivo creado con nano que se llama "info.php" y lo subimos_
@@ -136,10 +136,10 @@ _Ahora que sabemos que se pueden subir archivos vamos a subir una "backdoor.php 
 
 ## _Una vez ya tenemos la backdoor cargada procedemos a usarla de la siguiente manera, vamos a la url y ponemos "http://172.17.0.2/uploads/backdoor.php?cmd= " y el comando "whoami" para ver si somos root_
 ![img17](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/3708003c-6d71-4484-973c-0a4d2de713c3)
-_La salida nos muestra un "www-data" ésto indica que el comando se está ejecutando con los permisos del usuario que el servidor web (Apache, Nginx, etc.) utiliza para ejecutar scripts, entonces probamos otro comando "sudo-l" y ahora vemos que nos arroja más informacion, el resultado indica que el usuario "www-data" tiene permisos para ejecutar el comando /usr/bin/env como "root" sin necesidad de una contraseña (NOPASSWD)_
+_La salida nos muestra un "www-data" ésto indica que el comando se está ejecutando con los permisos del usuario que el servidor web (Apache, Nginx, etc.) utiliza para ejecutar scripts, entonces probamos otro comando "sudo-l" y ahora vemos que nos arroja más informacion, el resultado indica que el usuario "www-data" tiene permisos para ejecutar el comando "/usr/bin/env" como "root" sin necesidad de una contraseña (NOPASSWD)_
 ## _Adjunto imagen:_ 
 ![img19](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/e8db8a77-15e2-4a1a-8d90-80576b1fd21d)
-_Asi que vamos aprobechar eso y lo vamos a utilizar para ver que nos muestra ponemos lo siguiente: "http://172.17.0.2/uploads/backdoor.php?cmd=sudo /usr/bin/env"._
+_Asi que vamos aprovechar eso y lo vamos a utilizar para ver que nos muestra, ponemos lo siguiente: "http://172.17.0.2/uploads/backdoor.php?cmd=sudo /usr/bin/env"._
 ## _Adjunto imagen:_
 ![img21](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/864eb082-a808-4f85-94ac-f0b94fb87e45)
 
@@ -147,7 +147,7 @@ _Asi que vamos aprobechar eso y lo vamos a utilizar para ver que nos muestra pon
 
 ## Paso N°6: Acceso "Root".
 
-## _Y si ponemos el siguiente comando vemos que ya somos "root", "http://172.17.0.2/uploads/backdoor.php?cmd=sudo /usr/bin/env whoami"
+## _Y si ponemos el siguiente comando vemos que ya somos "root", "http://172.17.0.2/uploads/backdoor.php?cmd=sudo /usr/bin/env whoami"_
 ## _Adjunto imagen:_ 
 ![root](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/d440adfe-2584-41e9-9077-be5448b84c62)
 

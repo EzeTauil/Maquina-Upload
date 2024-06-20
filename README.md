@@ -118,7 +118,7 @@ Finished
 ![img6](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/b7142178-d353-419d-802d-8c2aeefd1d29) 
 
 ## _Procedemos con la subida de un archivo ".php" creado con "nano" para ver si se logra subir o no._
-## _Adjunto imagen:_
+>_Adjunto imagen:_
 ![img7](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/19ff2e35-d67d-435d-9707-65a7887f45bd)
 
 ## _Seleccionamos el archivo creado con nano que se llama "info.php" y lo subimos_
@@ -142,9 +142,11 @@ Finished
 ## _Una vez ya tenemos la backdoor cargada procedemos a usarla de la siguiente manera, vamos a la url y ponemos "http://172.17.0.2/uploads/backdoor.php?cmd= " y el comando "whoami" para ver si somos root_
 ![img17](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/3708003c-6d71-4484-973c-0a4d2de713c3)
 _La salida nos muestra un "www-data" ésto indica que el comando se está ejecutando con los permisos del usuario que el servidor web (Apache, Nginx, etc.) utiliza para ejecutar scripts, entonces probamos otro comando "sudo-l" y ahora vemos que nos arroja más informacion, el resultado indica que el usuario "www-data" tiene permisos para ejecutar el comando "/usr/bin/env" como "root" sin necesidad de una contraseña (NOPASSWD)_
+
 >_Adjunto imagen:_ 
 ![img19](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/e8db8a77-15e2-4a1a-8d90-80576b1fd21d)
 _Asi que vamos aprovechar eso y lo vamos a utilizar para ver que nos muestra, ponemos lo siguiente: "http://172.17.0.2/uploads/backdoor.php?cmd=sudo /usr/bin/env"._
+>
 >_Adjunto imagen:_
 ![img21](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/864eb082-a808-4f85-94ac-f0b94fb87e45)
 
@@ -153,6 +155,7 @@ _Asi que vamos aprovechar eso y lo vamos a utilizar para ver que nos muestra, po
 ## Paso N°6: Acceso "Root".
 
 ## _Y si ponemos el siguiente comando vemos que ya somos "root", "http://172.17.0.2/uploads/backdoor.php?cmd=sudo /usr/bin/env whoami"_
+
 >_Adjunto imagen:_ 
 ![root](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/d440adfe-2584-41e9-9077-be5448b84c62)
 
@@ -160,9 +163,11 @@ _Asi que vamos aprovechar eso y lo vamos a utilizar para ver que nos muestra, po
 
 ## Paso N°7: Creacion de usuario.
 _En éste punto intente crear un usuario con privilegios root pero por algun motivo no pude, no se si por configuracion de la maquina o simplemente porque hice algo mal, pero de igual manera comparto los pasos realizados:_ 
+
 >_Adjunto imagen:_ 
 ![img25](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/dea7c8a2-94d6-4924-865f-7d1183191b4d)
 _Y acá muestro como se creo el usuario "eze" pero con permisos básicos._
+
 >_Adjunto imagen:_ 
 ![img32](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/42f0a2a2-43fd-42e8-a851-79f0cfdacf43)
 

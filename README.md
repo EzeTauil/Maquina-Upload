@@ -110,7 +110,7 @@ Finished
 
 ## ----------------------------------------------------------------------------------------------------------------------------------
 
-## Paso N°4: Revisar y utilizar lo encontrado.
+## Paso N°4: Usamos el directorio encontrado.
 
 ### _Usamos el "/upload" que vimos anteriormente poniendolo en la web como "http://172.17.0.2/upload.php" ,en la salida nos encontramos con un recuadro donde se pueden subir archivos, asi que vamos a intentar explotar eso:_ 
 

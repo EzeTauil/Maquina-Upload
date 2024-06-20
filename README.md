@@ -1,7 +1,7 @@
 # Maquina-Upload 
 ## Resolviendo maquina-Upload de "El Pingüino de Mario" 
 
-> _Paso N°:1 Escaneo con nmap. (Fase de reconocimiento)_
+## _Paso N°:1 Escaneo con nmap. (Fase de reconocimiento)_
 
 ```bash
 ┌──(eze㉿kali)-[~]
@@ -18,7 +18,7 @@ PORT   STATE SERVICE VERSION
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 6.41 seconds
 ```
-## _Adjunto imagen:_
+>_Adjunto imagen:_
 ![img01](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/9af47708-694e-42e3-9381-2b7761f215d9)
 
 ## ----------------------------------------------------------------------------------------------------------------------------------
@@ -26,7 +26,7 @@ Nmap done: 1 IP address (1 host up) scanned in 6.41 seconds
 ## Paso N°2: Buscamos alguna pista en la web.
 ### _Podemos ver que el puerto "80/tcp open http Apache httpd 2.4.52 ((Ubuntu))" esta abierto, asi que ponemos "http://172.17.0.2" en el navegador para ver que muestra:_
 
-## _Adjunto imagen:_
+>_Adjunto imagen:_
 ![scaneo2](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/76f9e2bf-bbe7-4402-888f-60c074d548f8)
 ### _Al ver solo la pagina de configuracion de Apache procedemos a un escaneo de vulnerabilidades con nmap._
 

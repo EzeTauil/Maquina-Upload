@@ -1,7 +1,7 @@
 # Maquina-Upload 
 ## Resolviendo maquina-Upload de "El Pingüino de Mario" 
 
-> _Paso N°:1 Scaneo con nmap. (Fase de reconocimiento)_
+> _Paso N°:1 Escaneo con nmap. (Fase de reconocimiento)_
 
 ```bash
 ┌──(eze㉿kali)-[~]
@@ -28,9 +28,9 @@ Nmap done: 1 IP address (1 host up) scanned in 6.41 seconds
 
 ## _Adjunto imagen:_
 ![scaneo2](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/76f9e2bf-bbe7-4402-888f-60c074d548f8)
-### _Al ver solo la pagina de configuracion de Apache procedemos a un scaneo de vulnerabilidades con nmap._
+### _Al ver solo la pagina de configuracion de Apache procedemos a un escaneo de vulnerabilidades con nmap._
 
-## Paso N°3: Scaneo de vulnerabilidades con nmap.
+## Paso N°3: Escaneo de vulnerabilidades con nmap.
 
 ```bash
 ┌──(eze㉿kali)-[~]

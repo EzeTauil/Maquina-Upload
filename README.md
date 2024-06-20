@@ -1,5 +1,5 @@
 # Maquina-Upload 
-## Resolviendo maquina-Trust de "El Pingüino de Mario" 
+## Resolviendo maquina-Upload de "El Pingüino de Mario" 
 
 > _Paso N°:1 Scaneo con nmap. (Fase de reconocimiento)_
 
@@ -18,9 +18,10 @@ PORT   STATE SERVICE VERSION
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 6.41 seconds
 ```
+## -------------------------------------------------------------------------------------------------------------------------
 ![img01](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/9af47708-694e-42e3-9381-2b7761f215d9)
 
-## -----------------------------------------------------------------------------------------------------------
+## -------------------------------------------------------------------------------------------------------------------------
 
 ## Paso N°2: Buscamos alguna pista en la web.
 ### _Podemos ver que el puerto "80/tcp open http Apache httpd 2.4.57 ((Debian))" esta abierto, asi que ponemos "http://172.17.0.2" en el navegador para ver que muestra:_

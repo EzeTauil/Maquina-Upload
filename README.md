@@ -164,11 +164,11 @@ _Asi que vamos aprovechar eso y lo vamos a utilizar para ver que nos muestra, po
 ## Paso N°7: Creacion de usuario.
 _En éste punto intente crear un usuario con privilegios root pero por algun motivo no pude, no se si por configuracion de la maquina o simplemente porque hice algo mal, pero de igual manera comparto los pasos realizados:_ 
 
->_Adjunto imagen:_ 
+_Adjunto imagen:_ 
 ![img25](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/dea7c8a2-94d6-4924-865f-7d1183191b4d)
 _Y acá muestro como se creo el usuario "eze" pero con permisos básicos._
 
->_Adjunto imagen:_ 
+_Adjunto imagen:_ 
 ![img32](https://github.com/EzeTauil/Maquina-Upload/assets/118028611/42f0a2a2-43fd-42e8-a851-79f0cfdacf43)
 
 
